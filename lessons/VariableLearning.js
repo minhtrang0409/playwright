@@ -13,4 +13,9 @@ a = 2;
 //constant
 const PI_Number = 3.14
 //Re-assign is NOT allowed. 
-PI_Number=45;
+
+console.log(Number.MAX_VALUE);  //1.7976931348623157e+308
+console.log(Number.MIN_VALUE);  //5e-324
+
+console.log(typeof(3));
+

@@ -2,6 +2,8 @@ const readLine = require('readline-sync');
 
 let height = Number(readLine.question('Input your height (m): '));
 let weight = Number(readLine.question('Input your weight (kg): '));
+Number(height);
+Number(weight);
 
 
 
@@ -9,8 +11,8 @@ let weight = Number(readLine.question('Input your weight (kg): '));
 
 if (!isNaN(height) && !isNaN(weight)) {
     console.log("Please input the correct number");
-} else { 
-    let BMI = weight / (height * height);
+}else { 
+    let MBI = weight / (height * height);
 
     if (MBI < 18.5){
         console.log("You are Underweight, Please increase your weight");

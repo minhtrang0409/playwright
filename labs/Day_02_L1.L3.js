@@ -7,18 +7,18 @@ let weight = Number(readLine.question('Input your weight (kg): '));
 
 // Validation the number is inputted
 
-if (!isNaN(height) && !isNaN(weight)) {
+if (isNaN(height) && isNaN(weight)) {
     console.log("Please input the correct number");
 }else { 
-    let MBI = weight / (height * height);
+    let BMI = weight / (height * height);
 
-    if (MBI < 18.5){
+    if (BMI < 18.5){
         console.log("You are Underweight, Please increase your weight");
-    } else if(MBI < 24.9){
+    } else if(BMI < 24.9){
         console.log("You are Normal weight");
-    } else if(MBI < 29.9){
+    } else if(BMI < 29.9){
         console.log("You are Overweight, Please decrease your weight");
-    } else if(MBI>=30) {
+    } else if(BMI>=30) {
         console.log("You are Obesity, Please decrease your weight");
     }
 }

@@ -7,7 +7,7 @@ let weight = Number(readLine.question('Input your weight (kg): '));
 
 // Validation the number is inputted
 
-if (isNaN(height) && isNaN(weight)) {
+if (isNaN(height) || isNaN(weight)) {
     console.log("Please input the correct number");
 }else { 
     let BMI = weight / (height * height);

@@ -2,8 +2,6 @@ const readLine = require('readline-sync');
 
 let height = Number(readLine.question('Input your height (m): '));
 let weight = Number(readLine.question('Input your weight (kg): '));
-Number(height);
-Number(weight);
 
 
 

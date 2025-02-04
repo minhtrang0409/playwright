@@ -1,5 +1,5 @@
-Let mergerdArray = []
-Method 01: 
+// Let mergerdArray = []
+// Method 01: 
 
 /**
  * Let mergerdArray = []
@@ -20,3 +20,39 @@ else
     Loop 2nd array from barIndex < barLength => push all value into merge array
  * 
  */
+
+
+let a = [1, 12, 16, 28, 34];
+let b = [1, 13, 16, 27, 99];
+let merged = [];
+
+const aLength = a.length;
+const bLength = b.length;
+let aPosition = 0;
+let bPosition = 0;
+
+
+while(aPosition < aLength && bPosition < bLength){
+    const aValue = a[aPosition];
+    const bValue = b[bPosition];
+    if(aValue <= bValue){
+        merged.push(aValue);
+        aPosition++;
+
+    }else{
+        merged.push(bValue);
+        bPosition++;
+    }
+
+}
+
+while(aPosition < aLength){
+    merged.push(a[aPosition]);
+    aPosition++;
+}
+while(bPosition < bLength){
+    merged.push(b[bPosition]);
+    bPosition++;
+}
+
+console.log(merged);

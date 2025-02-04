@@ -1,3 +1,11 @@
+/*
+
+Pseudo code: 
+unsortedPosition = array(arrLenght -1)
+Loop index = 0 -> unsortedPosition -1
+
+*/
+
 let array = [12, 34, 1, 16, 38]
 
 let unsortedPosition = array.length - 1

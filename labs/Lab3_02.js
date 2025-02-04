@@ -19,13 +19,13 @@ let maxValue = array[0];
 for (let index = 0; index < array.length; index++) {
     const value = array[index]
     if (value < minValue) {
-        minValue = value; 
-    } else if (value> maxValue) {
-        maxValue = value; 
-    }
+        minValue = value;
+    } else if (value > maxValue) {
+        maxValue = value;
+    } 
 }
-if(minValue === maxValue) {
-    console.log(`There is no min/max value, all value are same: ${minValue}`);    
+if (minValue === maxValue) {
+    console.log(`There is no min/max value, all value are same: ${minValue}`);
 } else {
-console.log(`Min Value: ${minValue} and Max Value : ${maxValue}`);
+    console.log(`Min Value: ${minValue} and Max Value : ${maxValue}`);
 }

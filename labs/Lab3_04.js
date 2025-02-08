@@ -22,8 +22,8 @@ else
  */
 
 
-let a = [1, 12, 16, 28, 34];
-let b = [1, 13, 16, 27, 99];
+let a = [1, 2, 3, 4, 23, 34];
+let b = [4, 6, 7, 8,34, 23];
 let merged = [];
 
 const aLength = a.length;
@@ -46,13 +46,20 @@ while(aPosition < aLength && bPosition < bLength){
 
 }
 
-while(aPosition < aLength){
+while(aArrayStillHaveElement()){
     merged.push(a[aPosition]);
     aPosition++;
 }
-while(bPosition < bLength){
+while(bArrayStillHaveElement()){
     merged.push(b[bPosition]);
     bPosition++;
 }
+
+function aArrayStillHaveElement(){
+    return aPosition < aLength;
+}
+function bArrayStillHaveElement(){
+    return bPosition < bLength;
+}   
 
 console.log(merged);

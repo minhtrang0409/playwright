@@ -8,14 +8,20 @@ let nhoi = {
         street: "123 Main St",
         city: "New York",
         country: "USA"
-    },
-    greet: function() {
-        console.log("Hello, my name is " + this.name);
     }
 };
 
 //Shallow Copy - handle for nested object
-let nhoi2 = nhoi;
-nhoi2.name = "Nhoi2";
-console.log(nhoi);
-console.log(nhoi2);
+let Nhoi2 = JSON.parse(JSON.stringify(nhoi));
+Nhoi2.name = "Nhoi";
+Nhoi2.address.city = "Hanoi";
+
+// console.log(nhoi);
+// console.log(Nhoi2);
+
+// console.log(Object.keys(nhoi));
+// console.log(Object.values(nhoi));
+
+console.log(Object.entries(nhoi));
+
+

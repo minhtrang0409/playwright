@@ -2,9 +2,6 @@
   "name": "playwright",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/minhtrang0409/playwright.git"
@@ -19,5 +16,12 @@
   "description": "",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "compile": "tsc"
   }
 }

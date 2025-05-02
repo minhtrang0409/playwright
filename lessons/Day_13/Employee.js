@@ -1,16 +1,16 @@
 class Employee {
-    constructor(name, age, salary){
+    constructor(name, age, salary) {
         this._name = name;
         this._age = age;
         this._salary = salary;
     }
-    get name(){
+    get name() {
         return this._name;
     }
-    get age(){
+    get age() {
         return this._age;
     }
-    get salary(){
+    get salary() {
         return this._salary;
     }
 }

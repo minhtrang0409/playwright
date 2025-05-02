@@ -7,5 +7,5 @@ class SalaryControler {
         }
         return totalSalary;
     }
-} 
+}
 module.exports = SalaryControler;

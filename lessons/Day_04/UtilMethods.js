@@ -4,12 +4,8 @@
 // let isEvenNumber = isEvenNumber(3);
 // console.log(`Is 3 even number : ${isEvenNumber_}`);
 
-function isEvenNumber(number){
-
-    console.log(number %2);
-    return number % 2 === 0;
+const isEvenNumber = number => number % 2 === 0;
     
-}
 function isOddNumber(number){
 
     console.log(number %2);
